@@ -8,6 +8,7 @@ public class App {
         System.out.println("1 - Greet");
         System.out.println("2 - Even");
         System.out.println("3 - Calc");
+        System.out.println("4 - GCD");
         System.out.println("0 - Exit");
         Scanner scanner = new Scanner(System.in);
         var gameNumber = scanner.nextInt();
@@ -23,6 +24,10 @@ public class App {
             System.out.println("Your choice: 3");
             System.out.println("Welcome to the Brain Games!");
             Calc.calc();
+        } else if (gameNumber == 4) {
+            System.out.println("Your choice: 4");
+            System.out.println("Welcome to the Brain Games!");
+            GCD.gcd();
         }
     }
 }
