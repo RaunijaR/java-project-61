@@ -4,6 +4,12 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
+        var greet = 1;
+        var even = 2;
+        var calc = 3;
+        var gcd = 4;
+        var progression = 5;
+        var prime = 6;
         System.out.println("Please enter the game number and press Enter.");
         System.out.println("1 - Greet");
         System.out.println("2 - Even");
@@ -14,27 +20,27 @@ public class App {
         System.out.println("0 - Exit");
         Scanner scanner = new Scanner(System.in);
         var gameNumber = scanner.nextInt();
-        if (gameNumber == 1) {
+        if (gameNumber == greet) {
             System.out.println("Your choice: 1");
             System.out.println("Welcome to the Brain Games!");
             Cli.start();
-        } else if (gameNumber == 2) {
+        } else if (gameNumber == even) {
             System.out.println("Your choice: 2");
             System.out.println("Welcome to the Brain Games!");
             Parity.parityCheck();
-        } else if (gameNumber == 3) {
+        } else if (gameNumber == calc) {
             System.out.println("Your choice: 3");
             System.out.println("Welcome to the Brain Games!");
             Calc.calc();
-        } else if (gameNumber == 4) {
+        } else if (gameNumber == gcd) {
             System.out.println("Your choice: 4");
             System.out.println("Welcome to the Brain Games!");
             GCD.gcd();
-        } else if (gameNumber == 5) {
+        } else if (gameNumber == progression) {
             System.out.println("Your choice: 5");
             System.out.println("Welcome to the Brain Games!");
             Progression.prog();
-        } else if (gameNumber == 6) {
+        } else if (gameNumber == prime) {
             System.out.println("Your choice: 6");
             System.out.println("Welcome to the Brain Games!");
             Prime.prime();
