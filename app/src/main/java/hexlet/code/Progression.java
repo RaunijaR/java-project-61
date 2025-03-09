@@ -14,13 +14,13 @@ public class Progression {
 
         System.out.println("Hello, " + userName + "!");
 
-        int rounds = 3;
-        var boundLength = 6;
-        var boundLengthPlus = 5;
-        var boundStart = 10;
-        var boundStep = 3;
-        var boundStepPlus = 1;
-        var boundMissing = 5;
+        final int rounds = 3;
+        final var boundLength = 6;
+        final var boundLengthPlus = 5;
+        final var boundStart = 10;
+        final var boundStep = 3;
+        final var boundStepPlus = 1;
+        final var boundMissing = 5;
 
         for (int i = 0; i < rounds; i++) {
             Random random = new Random();
