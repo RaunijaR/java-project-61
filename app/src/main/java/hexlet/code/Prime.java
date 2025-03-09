@@ -13,7 +13,7 @@ public class Prime {
     }
 
     public static void prime() {
-        System.out.println("May I have your name? ");
+        System.out.print("May I have your name? ");
 
         Scanner scanner = new Scanner(System.in);
         var userName = scanner.next();
@@ -29,7 +29,7 @@ public class Prime {
             var correctAnswer = isPrime(num);
 
             System.out.println("Question: " + num);
-            System.out.println("Your answer: ");
+            System.out.print("Your answer: ");
 
             Scanner scan = new Scanner(System.in);
             var userAnswer = scan.next();
