@@ -23,8 +23,8 @@ public class GCD {
 
         System.out.println("Find the greatest common divisor of given numbers.");
 
-        var gameWin = 3;
-        var bound = 100;
+        final var gameWin = 3;
+        final var bound = 100;
         var correctAnswers = 0;
         while (correctAnswers < gameWin) {
             Random random = new Random();
