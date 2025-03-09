@@ -49,7 +49,7 @@ public class Progression {
                 System.out.println("Correct!");
             } else {
                 System.out.println(userAnswer + " is wrong answer ;(. Correct answer was " + missingValue);
-                System.out.println("Let's try again! " + userName + "!");
+                System.out.println("Let's try again, " + userName + "!");
                 return;
             }
         }
