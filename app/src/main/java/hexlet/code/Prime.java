@@ -25,7 +25,7 @@ public class Prime {
         var correctAnswers = 0;
         while (correctAnswers < 3) {
             Random random = new Random();
-            int num = random.nextInt(3000);
+            int num = random.nextInt(50);
             var correctAnswer = isPrime(num);
 
             System.out.println("Question: " + num);
