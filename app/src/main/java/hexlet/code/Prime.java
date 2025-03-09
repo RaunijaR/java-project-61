@@ -20,7 +20,6 @@ public class Prime {
         var userName = scanner.next();
 
         System.out.println("Hello, " + userName + "!");
-
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
 
         var correctAnswers = 0;
