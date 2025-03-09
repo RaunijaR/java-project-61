@@ -4,10 +4,11 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Prime {
-    private static String isPrime(int N) {
-        if (N < 2) return "no";
-        for (int i = 2; i <= Math.sqrt(N); i++) {
-            if (N % i == 0) return "no";
+
+    private static String isPrime(int n) {
+        if (n < 2) return "no";
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) return "no";
         }
         return "yes";
     }
