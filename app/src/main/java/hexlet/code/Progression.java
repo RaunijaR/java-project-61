@@ -42,14 +42,14 @@ public class Progression {
             }
             System.out.println();
 
-            System.out.print("Your answer: ");
+            System.out.println("Your answer: ");
             int userAnswer = scanner.nextInt();
 
             if (userAnswer == missingValue) {
                 System.out.println("Correct!");
             } else {
-                System.out.printf(userAnswer + " is wrong answer ;(. Correct answer was " + missingValue);
-                System.out.printf("Let's try again! " + userName + "!");
+                System.out.println(userAnswer + " is wrong answer ;(. Correct answer was " + missingValue);
+                System.out.println("Let's try again! " + userName + "!");
                 return;
             }
         }
