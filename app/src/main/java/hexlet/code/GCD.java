@@ -14,7 +14,7 @@ public class GCD {
         } return gcd; }
 
     public static void gcd() {
-        System.out.println("May I have your name? ");
+        System.out.print("May I have your name? ");
 
         Scanner scanner = new Scanner(System.in);
         var userName = scanner.next();
@@ -32,7 +32,7 @@ public class GCD {
             var correctAnswer = getGcd(firstInt, secondInt);
 
             System.out.println("Question: " + firstInt + " " + secondInt);
-            System.out.println("Your answer: ");
+            System.out.print("Your answer: ");
 
             Scanner scan = new Scanner(System.in);
             var userAnswer = scan.nextInt();
