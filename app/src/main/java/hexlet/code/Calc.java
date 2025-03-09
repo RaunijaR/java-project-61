@@ -23,7 +23,7 @@ public class Calc {
                 throw new IllegalArgumentException("Unknown operator: " + operator);
         }
     }
-        public static void calc () {
+        public static void calc() {
             System.out.print("May I have your name? ");
 
             Scanner scanner = new Scanner(System.in);
@@ -33,11 +33,13 @@ public class Calc {
 
             System.out.println("What is the result of the expression?");
 
+            var gameWin = 3;
+            var bound = 200;
             var correctAnswers = 0;
-            while (correctAnswers < 3) {
+            while (correctAnswers < gameWin) {
                 Random random = new Random();
-                int firstInt = random.nextInt(200);
-                int secondInt = random.nextInt(200);
+                int firstInt = random.nextInt(bound);
+                int secondInt = random.nextInt(bound);
                 char operator = getRandomOperator();
 
                 var correctAnswer = calculate(firstInt, secondInt, operator);
