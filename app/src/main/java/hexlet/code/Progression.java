@@ -8,17 +8,13 @@ public class Progression {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void prog() {
-        System.out.println("May I have your name? ");
+        System.out.print("May I have your name? ");
 
         Scanner scanner = new Scanner(System.in);
         var userName = scanner.next();
 
         System.out.println("Hello, " + userName + "!");
 
-        playGame();
-    }
-
-    private static void playGame() {
         int rounds = 3;
 
         for (int i = 0; i < rounds; i++) {
@@ -35,6 +31,7 @@ public class Progression {
             int missingValue = progression[missingIndex];
             progression[missingIndex] = -1;
 
+            System.out.println("What number is missing in the progression?");
             System.out.print("Question: ");
             for (int j = 0; j < length; j++) {
                 if (progression[j] == -1) {
@@ -52,11 +49,11 @@ public class Progression {
                 System.out.println("Correct!");
             } else {
                 System.out.printf(userAnswer + " is wrong answer ;(. Correct answer was " + missingValue);
-                System.out.printf("Let's try again!");
+                System.out.printf("Let's try again! " + userName + "!");
                 return;
             }
         }
 
-        System.out.printf("Congratulations, User");
+        System.out.println("Congratulations, " + userName + "!");
     }
 }
