@@ -19,7 +19,7 @@ public class Prime {
         Scanner scanner = new Scanner(System.in);
         var userName = scanner.next();
 
-        System.out.println("Hello, " + userName + "!");
+        System.out.println("Hello, " + userName);
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
 
         var correctAnswers = 0;
@@ -38,7 +38,6 @@ public class Prime {
                 System.out.println("Correct!");
                 correctAnswers++;
             } else {
-                System.out.println(userAnswer + " - wrong answer ;(. Correct answer was - " + correctAnswer);
                 System.out.println("Let's try again, " + userName + "!");
                 return;
             }
