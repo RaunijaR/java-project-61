@@ -23,11 +23,13 @@ public class GCD {
 
         System.out.println("Find the greatest common divisor of given numbers.");
 
+        var gameWin = 3;
+        var bound = 100;
         var correctAnswers = 0;
-        while (correctAnswers < 3) {
+        while (correctAnswers < gameWin) {
             Random random = new Random();
-            int firstInt = random.nextInt(100);
-            int secondInt = random.nextInt(100);
+            int firstInt = random.nextInt(bound);
+            int secondInt = random.nextInt(bound);
 
             var correctAnswer = getGcd(firstInt, secondInt);
 
