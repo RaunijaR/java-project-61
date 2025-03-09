@@ -17,10 +17,12 @@ public class Parity {
 
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
 
+        var gameWin = 3;
+        var bound = 100;
         var correctAnswers = 0;
-        while (correctAnswers < 3) {
+        while (correctAnswers < gameWin) {
             Random random = new Random();
-            int randomNumber = random.nextInt(100);
+            int randomNumber = random.nextInt(bound);
             System.out.println("Question: " + randomNumber);
             System.out.print("Your answer: ");
             Scanner scann = new Scanner(System.in);
@@ -33,7 +35,8 @@ public class Parity {
             var correctAnswer = isEven(randomNumber) ? "yes" : "no";
             if (userAnswer.equals(correctAnswer)) {
                 System.out.println("Correct!");
-                correctAnswers++; }
+                correctAnswers++;
+            }
                 else {
                     System.out.println(userAnswer + " - wrong answer ;(. Correct answer was - " + correctAnswer);
                     System.out.println("Let's try again, " + userName + "!");
