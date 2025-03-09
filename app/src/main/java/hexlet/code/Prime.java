@@ -9,8 +9,7 @@ public class Prime {
         if (n < 2) return "no";
         for (int i = 2; i <= Math.sqrt(n); i++) {
             if (n % i == 0) return "no";
-        }
-        return "yes";
+        } return "yes";
     }
 
     public static void prime() {
@@ -19,11 +18,12 @@ public class Prime {
         Scanner scanner = new Scanner(System.in);
         var userName = scanner.next();
 
-        System.out.println("Hello, " + userName+"!");
+        System.out.println("Hello, " + userName+ "!");
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
 
         var correctAnswers = 0;
         while (correctAnswers < 3) {
+
             Random random = new Random();
             int num = random.nextInt(50);
             var correctAnswer = isPrime(num);
