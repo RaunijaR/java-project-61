@@ -4,8 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Progression {
-    private static final Random random = new Random();
-    private static final Scanner scanner = new Scanner(System.in);
+
 
     public static void prog() {
         System.out.print("May I have your name? ");
@@ -16,12 +15,19 @@ public class Progression {
         System.out.println("Hello, " + userName + "!");
 
         int rounds = 3;
+        var boundLength = 6;
+        var boundLengthPlus = 5;
+        var boundStart = 10;
+        var boundStep = 3;
+        var boundStepPlus = 1;
+        var boundMissing = 5;
 
         for (int i = 0; i < rounds; i++) {
-            int length = random.nextInt(6) + 5;
-            int start = random.nextInt(10);
-            int step = random.nextInt(3) + 1;
-            int missingIndex = random.nextInt(5);
+            Random random = new Random();
+            int length = random.nextInt(boundLength) + boundLengthPlus;
+            int start = random.nextInt(boundStart);
+            int step = random.nextInt(boundStep) + boundStepPlus;
+            int missingIndex = random.nextInt(boundMissing);
 
             int[] progression = new int[length];
             for (int j = 0; j < length; j++) {
@@ -43,7 +49,8 @@ public class Progression {
             System.out.println();
 
             System.out.println("Your answer: ");
-            int userAnswer = scanner.nextInt();
+            Scanner scan = new Scanner(System.in);
+            int userAnswer = scan.nextInt();
 
             if (userAnswer == missingValue) {
                 System.out.println("Correct!");
