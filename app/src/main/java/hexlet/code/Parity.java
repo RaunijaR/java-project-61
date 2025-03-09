@@ -17,8 +17,8 @@ public class Parity {
 
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
 
-        var gameWin = 3;
-        var bound = 100;
+        final var gameWin = 3;
+        final var bound = 100;
         var correctAnswers = 0;
         while (correctAnswers < gameWin) {
             Random random = new Random();
@@ -36,8 +36,7 @@ public class Parity {
             if (userAnswer.equals(correctAnswer)) {
                 System.out.println("Correct!");
                 correctAnswers++;
-            }
-                else {
+            } else {
                     System.out.println(userAnswer + " - wrong answer ;(. Correct answer was - " + correctAnswer);
                     System.out.println("Let's try again, " + userName + "!");
                     return;
