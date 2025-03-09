@@ -8,7 +8,7 @@ public class Parity {
         return number % 2 == 0;
     }
     public static void parityCheck() {
-        System.out.println("May I have your name? ");
+        System.out.print("May I have your name? ");
 
         Scanner scanner = new Scanner(System.in);
         var userName = scanner.next();
@@ -22,7 +22,7 @@ public class Parity {
             Random random = new Random();
             int randomNumber = random.nextInt(100);
             System.out.println("Question: " + randomNumber);
-            System.out.println("Your answer: ");
+            System.out.print("Your answer: ");
             Scanner scann = new Scanner(System.in);
             var userAnswer = scann.nextLine();
 
