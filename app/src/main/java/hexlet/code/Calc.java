@@ -33,8 +33,8 @@ public class Calc {
 
             System.out.println("What is the result of the expression?");
 
-            var gameWin = 3;
-            var bound = 200;
+            final var gameWin = 3;
+            final var bound = 200;
             var correctAnswers = 0;
             while (correctAnswers < gameWin) {
                 Random random = new Random();
