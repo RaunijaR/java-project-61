@@ -24,7 +24,7 @@ public class Calc {
         }
     }
         public static void calc () {
-            System.out.println("May I have your name? ");
+            System.out.print("May I have your name? ");
 
             Scanner scanner = new Scanner(System.in);
             var userName = scanner.next();
@@ -42,8 +42,8 @@ public class Calc {
 
                 var correctAnswer = calculate(firstInt, secondInt, operator);
 
-                System.out.println("Question: " + firstInt + operator + secondInt);
-                System.out.println("Your answer: ");
+                System.out.println("Question: " + firstInt + " " + operator + " " + secondInt);
+                System.out.print("Your answer: ");
 
                 Scanner scan = new Scanner(System.in);
                 var userAnswer = scan.nextInt();
