@@ -10,7 +10,9 @@ public class Prime {
             return "no";
         }
         for (int i = 2; i <= Math.sqrt(n); i++) {
-            if (n % i == 0) return "no";
+            if (n % i == 0) {
+                return "no";
+            }
         } return "yes";
     }
 
@@ -23,8 +25,8 @@ public class Prime {
         System.out.println("Hello, " + userName + "!");
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
 
-        var gameWin = 3;
-        var bound = 50;
+        final var gameWin = 3;
+        final var bound = 50;
         var correctAnswers = 0;
         while (correctAnswers < gameWin) {
 
